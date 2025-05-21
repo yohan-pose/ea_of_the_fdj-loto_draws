@@ -18,7 +18,7 @@ tout en mettant en pratique des compétences fondamentales en data analysis.
 
 ## Outils utilisés : 
 Python, Jupyter Notebook, Pandas, Matplotlib, Seaborn
----
+- - -
 # Exploratory analysis of FDJ - LOTO draws
 ## Summary:
 In this personal project, I carried out an **exploratory analysis** of historical French LOTO draw data (drawn by FDJ). 
