@@ -14,7 +14,7 @@ tout en mettant en pratique des compétences fondamentales en data analysis.
 - Identification des tirages les plus fréquents et des « numéros froids »
 - Visualisations interactives facilitant la lecture des tendances
 ## Outils utilisés : 
-Python, Jupyter Notebook, Pandas, Matplotlib, Seaborn
+Python, Pandas, Matplotlib, Seaborn
 - - -
 # Exploratory analysis of FDJ - LOTO draws
 ## Abstract :
@@ -32,4 +32,4 @@ while applying fundamental data analysis skills.
 - Identification of most frequent draws and “cold numbers
 - Interactive visualizations for trend analysis
 ## Tools used :
-Python, Jupyter Notebook, Pandas, Matplotlib, Seaborn
+Python, Pandas, Matplotlib, Seaborn
