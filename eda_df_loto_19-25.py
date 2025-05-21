@@ -19,12 +19,10 @@ df = pd.read_csv("df_loto_19-25.csv", sep=";")
 # ReClassification des types des colonnes datetime du DF
 # print(df.dtypes)
 df['date_de_tirage'] = pd.to_datetime(df['date_de_tirage'], format="%Y-%m-%d")
-df['date_de_forclusion'] = pd.to_datetime(df['date_de_forclusion'], format="%Y-%m-%d")
 
 # Liste des colonnes à exclure de l'analyse numérique
 col_not_num_a_exclure = [
     'date_de_tirage',
-    'date_de_forclusion',
     'jour_de_la_semaine_de_tirage',
     'jour_de_tirage',
     'mois_de_tirage',
@@ -33,7 +31,6 @@ col_not_num_a_exclure = [
     'codes_gagnants',
     'combinaison_gagnant_second_tirage_en_ordre_croissant',
     'numero_jokerplus',
-    'devise'
 ]
 
 col_num = df.select_dtypes(include='number').columns

@@ -29,7 +29,7 @@ colonnes_val_manquante = colonnes_val_manquante[colonnes_val_manquante>0]
 # print("Nombre de valeurs manquantes par colonne :\n", colonnes_val_manquante)
 
 # Suppresion des colonnes superflues dans le Dataframe
-colonnes_a_supprimer = ['promotion_second_tirage', 'Unnamed: 49']              # Liste des colonnes à supprimer
+colonnes_a_supprimer = ['date_de_forclusion','promotion_second_tirage','devise','Unnamed: 49']              # Liste des colonnes à supprimer
 df = df.drop(columns=[col for col in colonnes_a_supprimer if col in df.columns])
 
 # Nettoyage des colonnes non harmoniser
@@ -45,9 +45,6 @@ df = df.drop(columns=['annee_numero_de_tirage'])
 
 ## Colonne 'jour_de_tirage'
 df['jour_de_tirage'] = df['jour_de_tirage'].astype(str)
-
-## Colonne 'date_de_forclusion'
-df['date_de_forclusion'] = pd.to_datetime(df['date_de_forclusion'], format="%d/%m/%Y")
 
 ## Colonne 'rapport_du_rangX'
 ### Sélection de toutes les colonnes contenant "rapport_du_rangX" et "rapport_codes"
