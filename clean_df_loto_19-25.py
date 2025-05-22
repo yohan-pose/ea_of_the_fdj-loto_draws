@@ -71,6 +71,7 @@ df['numero_jokerplus'] = df['numero_jokerplus'].astype(int)
 df['annee_de_tirage'] = df['date_de_tirage'].dt.year
 df['mois_de_tirage'] = df['date_de_tirage'].dt.month
 df['jour_de_la_semaine_de_tirage']=df['jour_de_tirage']
+df['jour_de_la_semaine_de_tirage'] = df['jour_de_la_semaine_de_tirage'].str.strip().str.capitalize()
 df['jour_de_tirage'] = df['date_de_tirage'].dt.day
 
 ## Réorganisation des colonnes
